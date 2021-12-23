@@ -1,22 +1,15 @@
 .totalContainer{
-    color:rgb(90, 90, 90);
-    font-weight: 500;
-    font-size:1.2rem;
-    line-height:1.5rem;
-    border-bottom:0 solid;
-    transition:all 0.1s ease-in-out;
-    padding:0 1rem;
-    cursor:pointer;
-    display:flex;
-    align-items:center;
-    box-sizing: content-box;
-   
+    
+    height:100%;
+    display: flex;
 }
-.totalContainer:hover{
+   
+
+/* .totalContainer:hover{
    border-bottom:4px dodgerblue solid;
     color:rgb(53, 53, 53)
    
-}
+} */
 .pfp{
     display:none;
     height:3.4rem;
