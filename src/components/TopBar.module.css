@@ -48,7 +48,7 @@
 }
 .tabs{
     height:100%;
-    display: inline-flex;
+    display: flex;
 }
 
 .rightSide{
