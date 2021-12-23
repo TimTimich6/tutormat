@@ -3,7 +3,13 @@ import cs from './Tab.module.css';
 const Tab = (props) => {
 	return (
 		<Link className={cs.link} to={props.link}>
-			<span className={cs.text}>{props.children}</span>
+			{props.color ? (
+				<span style={{ color: props.color }} className={cs.text}>
+					{props.children}
+				</span>
+			) : (
+				<span className={cs.text}>{props.children}</span>
+			)}
 		</Link>
 	);
 };

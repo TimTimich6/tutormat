@@ -9,7 +9,7 @@ const ProfileButton = (props) => {
 			{/* <img src="./blankprofile.png" alt="PFP" className={cs.pfp} /> */}
 			{logged ? <span className={cs.fullName}>Timofey Obraztsov</span> : <>
 			<Tab link="/login">Login</Tab>
-			 <Tab link="/signup">Signup</Tab>
+			 <Tab link="/signup" color="#0096c7">Signup</Tab>
 			 </>
 }
 		</div>
