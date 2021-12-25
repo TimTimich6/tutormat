@@ -2,12 +2,12 @@ import cs from './TypeInput.module.css';
 const TypeInput = (props) => {
 	return (
 		<div className={cs.inputContainer}>
-			<div className={cs.labelContainer} />
 			<label htmlFor={props.id} className={cs.labelText}>
 				{props.labelText}
 			</label>
 			<input
 				type={props.type}
+				size={props.sz}
 				minlength={props.minLength}
 				maxlength={props.maxLength}
 				required={props.required}

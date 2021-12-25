@@ -1,4 +1,6 @@
 .totalBar{
+    position: sticky;
+    top:0;
     height:9vh;
     display:flex;
     flex-direction: row;
@@ -26,7 +28,7 @@
     border-right:0.0625rem solid rgb(228, 215, 215);
 }
 .logobox>h1{
-    /* font-family: 'Staatliches'!important; */
+    font-family: Poppins !important;
     margin:0;
     font-size:2.6rem;
     transition: all 0.3s ease-in-out;

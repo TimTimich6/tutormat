@@ -1,32 +1,49 @@
 .signUpWrapper{
     display:flex;
     flex-direction:column;
+    align-self:center;
     align-items:center;
-    width:fit-content;
+    border-radius:1rem;
+    padding:3rem 6rem;
+    background-color:#ffffff;
+    text-align: center;
+    box-shadow:0 0 1rem 1rem #dbe4f4;
+    max-width:32rem;
 }
 .titleText{
-    font-size:1.6rem;
-    font-weight:bold;
+    font-size:2rem;
+    font-weight:800;
     margin:1.2rem 0;
-    padding:0 5rem;
-    color:#293a5f;
+    /* padding:0 5rem; */
+    color:#1B1C40;
 }
 .secondaryText{
-    font-weight: 500;
-    color:#293a5f;
-    padding:0 3rem;
+    font-weight: bold;
+    color:#1B1C40;
     margin-bottom: 1rem;
 }
 
 form{
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    
+    margin-bottom: 3rem;
+    width:fit-content;
 }
 
 .nameContainer{
     display:flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    width:auto;
+    justify-content:space-between;
+    /* flex-wrap: wrap; */
+}
+
+.buttonSpace{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 0.7rem;
+    flex-direction: column;
+    gap:2rem;
+}
+.policyText{
+    width:80%;
+    font-size: 0.85rem;
 }
