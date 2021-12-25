@@ -1,14 +1,32 @@
+.signUpWrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:fit-content;
+}
 .titleText{
     font-size:1.6rem;
     font-weight:bold;
     margin:1.2rem 0;
-    padding:0 9rem;
+    padding:0 5rem;
     color:#293a5f;
 }
 .secondaryText{
     font-weight: 500;
     color:#293a5f;
-    padding:0 7rem;
+    padding:0 3rem;
+    margin-bottom: 1rem;
+}
 
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
+.nameContainer{
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width:auto;
 }

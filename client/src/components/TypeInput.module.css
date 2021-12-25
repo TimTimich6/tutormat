@@ -1,0 +1,22 @@
+.inputContainer{
+    padding:0.2rem;
+    display:flex;
+    flex-direction: column;
+    line-height: 1.3rem;
+}
+input{
+    font-size:1rem;
+    padding:0.8rem 0.5rem;
+    border:rgb(160, 160, 160) 0.0625rem solid;
+    border-radius:0.2rem;
+}
+label{
+    text-align:left;
+}
+.extraText{
+    text-align:left;
+    color:crimson;
+    visibility:hidden;
+    /* display:none; */
+    
+}

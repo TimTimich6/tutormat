@@ -1,4 +1,4 @@
-import TopBar from "./TopBar";
+import TopBar from "./TopBar.js";
 import cs from './Layout.module.css'
 const Layout = (props) => {
     return (<>

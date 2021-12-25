@@ -1,6 +1,6 @@
 import cs from './ProfileButton.module.css';
 import { useState } from 'react';
-import Tab from './Tab';
+import Tab from './Layout/Tab';
 const ProfileButton = (props) => {
 	const [ logged, setLogged ] = useState(false);
 

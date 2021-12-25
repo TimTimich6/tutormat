@@ -1,11 +1,12 @@
 .mainContainer{
     margin: 0 auto;
-    width:40%;
     display:flex;
     align-items:center;
     flex-direction: column;
     border-radius:1rem;
     padding:1rem;
-    background-color:#fbfbfb;
+    background-color:#ffffff;
     text-align: center;
+    box-shadow:0 0 1rem 1rem #dbe4f4;
+    width:fit-content
 }

@@ -1,7 +1,7 @@
 import cs from './TopBar.module.css';
 import Tab from './Tab';
 import { Link } from 'react-router-dom';
-import ProfileButton from './ProfileButton';
+import ProfileButton from '../ProfileButton';
 const TopBar = (props) => {
 	return (
 		<div className={cs.totalBar}>
