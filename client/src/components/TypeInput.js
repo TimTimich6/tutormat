@@ -9,8 +9,8 @@ const TypeInput = (props) => {
 				className={cs.textInput}
 				type={props.type}
 				size={props.sz}
-				minlength={props.minLength}
-				maxlength={props.maxLength}
+				min-length={props.minLength}
+				max-length={props.maxLength}
 				required={props.required}
 				placeholder={props.placeholder}
 				name={props.id}

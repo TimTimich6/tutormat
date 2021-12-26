@@ -6,7 +6,7 @@ const TopBar = (props) => {
 	return (
 		<div className={cs.totalBar}>
 			<div className={cs.leftSide}>
-				<Link className={cs.homelink} exact to={'/'}>
+				<Link className={cs.homelink} exact="true" to={'/'}>
 					<div className={cs.logobox}>
 						<img src="/tutormatlogo3.png" alt="" className={cs.logo} />
 						<h1>TUTORMAT</h1>

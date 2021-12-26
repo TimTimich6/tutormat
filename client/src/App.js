@@ -11,7 +11,7 @@ function App() {
 			<Layout>
 				<Routes>
 					<Route path="/" element={<HomePage />} />
-					<Route path="/signup" exact element={user ? <Navigate to="/" /> : <Signup />} />
+					<Route path="/signup" exact="true" element={user ? <Navigate to="/" /> : <Signup />} />
 				</Routes>
 			</Layout>
 		</div>
