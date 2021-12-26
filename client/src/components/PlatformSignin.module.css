@@ -1,0 +1,25 @@
+.platformContainer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+    border:0.0625rem solid transparent;
+    border-radius: 0.25rem;
+    padding:0.75rem 1.25rem;
+    color:white;
+    cursor: pointer;
+    width:100%;
+    transition: all 0.2s ease-in-out;
+}
+.platformContainer:hover{
+    background-color:#396199 !important;
+}
+
+.platformLogo{
+    width:1.8rem;
+}
+
+.platformText{
+    font-size: 1.1rem;
+    font-weight:bold;
+}

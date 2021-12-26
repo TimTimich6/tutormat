@@ -6,6 +6,7 @@ const TypeInput = (props) => {
 				{props.labelText}
 			</label>
 			<input
+				className={cs.textInput}
 				type={props.type}
 				size={props.sz}
 				minlength={props.minLength}
