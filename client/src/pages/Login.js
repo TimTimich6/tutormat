@@ -1,26 +1,17 @@
 import cs from './Login.module.css';
 import TypeInput from '../components/TypeInput';
-import PlatformSignin from '../components/PlatformSignin';
 import RoundButton from '../components/RoundButton';
 import { Link } from 'react-router-dom';
+import GoogleSignin from '../components/GoogleSignin';
+import FacebookSignin from '../components/FacebookSignin';
 
 const Login = (props) => {
-	const google = () => {
-		window.open('http://localhost:5000/auth/google');
-	};
-	const facebook = () => {
-		window.open('http://localhost:5000/auth/facebook');
-	};
 	return (
 		<div className={cs.signUpWrapper}>
 			<span className={cs.titleText}>Login in</span>
 			<div className={cs.externalSignin}>
-				<PlatformSignin src="/googlelogo2.png" alt="Google" bgc="#577ACE" handler={google}>
-					Sign in with Google
-				</PlatformSignin>
-				<PlatformSignin src="/fblogo2.png" alt="Facebook" bgc="#4267b2" handler={facebook}>
-					Sign in with Facebook
-				</PlatformSignin>
+				<GoogleSignin />
+				<FacebookSignin />
 			</div>
 			<span className={cs.splitter}>Or</span>
 			<form action="/api/signup" method="POST">
