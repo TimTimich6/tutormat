@@ -11,8 +11,10 @@
     
 }
 .logo{
-    width:3.5rem;
+    height:80%;
 }
+
+
 .homelink{
     height:100%;
 }
@@ -39,6 +41,20 @@
 }
 .logobox>h1:hover{
     color:rgb(124, 121, 114);
+}
+@media only screen and (max-width:900px)  {
+    .logobox>h1{
+        /* height:1rem; */
+        display: none;
+
+    }
+    .logobox{
+        padding-right:1.2rem;
+    }
+    /* .logo{
+        width:3rem;
+        padding:0.5rem;
+    } */
 }
 .leftSide{
     display: flex;
