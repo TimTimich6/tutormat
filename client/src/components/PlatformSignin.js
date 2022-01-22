@@ -2,7 +2,7 @@ import cs from './PlatformSignin.module.css';
 import ProfileContext from '../ProfileContext';
 import { useContext } from 'react';
 const PlatformSignin = (props) => {
-	const setUser = useContext(ProfileContext);
+	const { setUser } = useContext(ProfileContext);
 	const getUser = () => {
 		fetch('http://localhost:5000/auth/login/success', {
 			method: 'GET',
@@ -28,6 +28,7 @@ const PlatformSignin = (props) => {
 	return (
 		<button
 			onClick={() => {
+				console.log('clicked');
 				props.handler();
 				getUser();
 			}}

@@ -1,0 +1,11 @@
+POST http://localhost:5000/api/auth/register HTTP/1.1
+
+
+###
+POST http://localhost:5000/api/auth/forgotpassword HTTP/1.1
+
+###
+PUT http://localhost:5000/api/auth/resetpassword/13131 HTTP/1.1
+
+
+

@@ -1,26 +1,18 @@
-const cookieSession = require('cookie-session');
-const passport = require('passport');
 const express = require('express');
 const app = express();
-const cors = require('cors');
-const passportSetup = require('./passport');
-const authRoute = require('./routes/auth');
+const dotenv = require('dotenv').config();
+const PORT = process.env.PORT || 5000;
+const auth = require('./routes/auth');
+const connecteDB = require('./config/db.js');
 
-app.use(cookieSession({ name: 'session', keys: [ 'tim' ], maxAge: 24 * 60 * 60 * 100 }));
+connecteDB();
+app.use(express.json());
+app.use('/api/auth', auth);
+const server = app.listen(PORT, () => {
+	console.log('Running on port ', PORT);
+});
 
-app.use(passport.initialize());
-app.use(passport.session());
-
-app.use(
-	cors({
-		origin: 'http://localhost:3000',
-		methods: 'GET,POST,PUT,DELETE',
-		credentials: true
-	})
-);
-
-app.use('/auth', authRoute);
-
-app.listen('5000', () => {
-	console.log('Server is running!');
+process.on('unhandledRejection', (err, promise) => {
+	console.log('Logged error: ', err);
+	server.close(() => process.exit(1));
 });

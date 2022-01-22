@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Routes, Navigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import HomePage from './pages/HomePage';
 import Signup from './pages/Signup';
 import Layout from './components/Layout/Layout.js';
